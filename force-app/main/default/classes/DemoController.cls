@@ -15,7 +15,7 @@ public with sharing class DemoController {
             // Query the object
             Contact theContact = [SELECT ID FROM Contact WHERE LastName = :lastName LIMIT 1];
 
-            // this will set the Id, so now you can use the standard controller and just reference fields on the page
+            // this will set the Id, so now you can use the standard controller and just reference fields on the page k
             ApexPages.currentPage().getParameters().put('id', theContact.Id);
         }
     }
